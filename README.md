@@ -18,5 +18,5 @@ Parâmetros da URL (UTMs) são repassados automaticamente para o checkout.
 
 ## Publicação
 
-O workflow `.github/workflows/pages.yml` publica o site no GitHub Pages a cada push.
-Em *Settings → Pages*, a origem deve estar em **GitHub Actions**.
+O site é estático (sem build). A Hostinger publica o conteúdo da branch `main`
+na pasta `public_html` pela integração Git do hPanel: cada merge na `main` atualiza o site.
