@@ -1,0 +1,575 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Protocolo Zero Cólica</title>
+<meta name="description" content="Guia ilustrado com 9 movimentos de massagem na barriguinha para bebês de 0 a 6 meses com gases, cólica e intestino preso.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%232f5d50'/%3E%3Ccircle cx='32' cy='32' r='15' fill='none' stroke='%23fbf7f1' stroke-width='6'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fbf7f1;
+  --surface:#ffffff;
+  --soft:#eef3ee;
+  --ink:#22302b;
+  --muted:#4d5c56;
+  --quiet:#6c7a74;
+  --line:#e3e6df;
+  --green:#2f5d50;
+  --green-dark:#21443a;
+  --green-light:#dfeae4;
+  --clay:#d9714e;
+  --clay-dark:#bd5a39;
+  --clay-light:#fbe7de;
+  --gold:#e2a33f;
+  --sh:0 24px 50px -32px rgba(34,48,43,.45);
+  --r:20px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Nunito,system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;font-size:17px;-webkit-font-smoothing:antialiased}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.narrow{max-width:760px}
+section{padding:72px 0}
+.eyebrow{display:inline-block;font-size:13px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--clay-dark);margin-bottom:12px}
+h1,h2,h3{line-height:1.15;letter-spacing:-.01em}
+h1{font-size:clamp(32px,5.4vw,54px);font-weight:900}
+h2{font-size:clamp(27px,4vw,40px);font-weight:900;margin-bottom:14px}
+h3{font-size:20px;font-weight:800}
+.lead{font-size:clamp(17px,2vw,20px);color:var(--muted)}
+.center{text-align:center}
+mark{background:linear-gradient(transparent 58%,var(--clay-light) 58%);color:inherit;padding:0 2px}
+
+/* barra topo */
+.topbar{background:var(--green-dark);color:#fff;font-size:14px;font-weight:700;overflow:hidden;white-space:nowrap}
+.topbar .track{display:inline-flex;gap:40px;padding:9px 0;animation:marquee 26s linear infinite}
+.topbar span s{opacity:.6;margin-right:6px}
+.topbar b{color:var(--gold)}
+@keyframes marquee{to{transform:translateX(-50%)}}
+
+/* botões */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--clay);color:#fff;text-decoration:none;font-weight:900;font-size:18px;padding:18px 30px;border-radius:999px;border:0;cursor:pointer;box-shadow:0 14px 28px -14px var(--clay-dark);transition:transform .15s,background .15s;text-align:center}
+.btn:hover{background:var(--clay-dark);transform:translateY(-2px)}
+.btn.full{width:100%}
+.btn.alt{background:var(--green)}
+.btn.alt:hover{background:var(--green-dark)}
+.microcopy{font-size:14px;color:var(--quiet);margin-top:10px}
+
+/* hero */
+.hero{padding:56px 0 64px;background:radial-gradient(1200px 500px at 80% -10%,var(--green-light),transparent 60%)}
+.hero .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.pill{display:inline-flex;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:14px;font-weight:700;color:var(--green);margin-bottom:20px}
+.pill i{width:8px;height:8px;border-radius:50%;background:var(--clay);display:block}
+.hero h1{margin-bottom:18px}
+.hero h1 em{font-style:normal;color:var(--green)}
+.hero .lead{margin-bottom:28px}
+.hero-art{background:var(--surface);border-radius:28px;box-shadow:var(--sh);padding:28px;position:relative}
+.hero-art .tag{position:absolute;left:-14px;bottom:28px;background:var(--clay);color:#fff;font-weight:800;font-size:14px;padding:10px 16px;border-radius:14px;box-shadow:var(--sh)}
+.checks{list-style:none;display:grid;gap:8px;margin-top:22px}
+.checks li{display:flex;gap:10px;align-items:flex-start;font-weight:600;color:var(--muted)}
+.checks li::before{content:"";flex:0 0 20px;height:20px;border-radius:50%;margin-top:3px;background:var(--green) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M5.5 10.5l3 3 6-7' fill='none' stroke='white' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/16px no-repeat}
+
+/* pra quem é */
+.fit{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:36px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:28px}
+.fit h3{display:flex;align-items:center;gap:10px;margin-bottom:16px}
+.fit .ico{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;color:#fff;font-weight:900;font-size:16px}
+.fit .yes .ico{background:var(--green)}
+.fit .no .ico{background:#a7a9a4}
+.fit ul{list-style:none;display:grid;gap:12px}
+.fit li{padding-left:22px;position:relative;color:var(--muted)}
+.fit li::before{content:"";position:absolute;left:0;top:10px;width:8px;height:8px;border-radius:50%;background:var(--green)}
+.fit .no li::before{background:#b9bbb5}
+
+/* dor */
+.pain{background:var(--green-dark);color:#eef3ee}
+.pain .eyebrow{color:var(--gold)}
+.pain h2{color:#fff}
+.pain p{font-size:19px;margin-bottom:18px;color:#d6e2dc}
+.pain .quote{font-size:22px;font-weight:800;color:#fff;border-left:4px solid var(--clay);padding-left:18px;margin:28px 0}
+
+/* evidências */
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:36px}
+.fact .num{font-size:40px;font-weight:900;color:var(--green);line-height:1}
+.fact p{margin-top:10px;color:var(--muted)}
+.fact small{display:block;margin-top:12px;font-size:13px;color:var(--quiet);font-weight:700}
+
+/* passos */
+.steps{display:grid;gap:18px;margin-top:36px}
+.step{display:grid;grid-template-columns:64px 1fr;gap:20px;align-items:start}
+.step .n{width:64px;height:64px;border-radius:18px;background:var(--clay-light);color:var(--clay-dark);display:grid;place-items:center;font-size:28px;font-weight:900}
+.step .k{font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:var(--quiet)}
+.step h3{margin:4px 0 8px}
+.step p{color:var(--muted)}
+
+/* conteúdo */
+.items{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:36px}
+.item .cover{aspect-ratio:4/3;border-radius:14px;margin-bottom:18px;display:grid;place-items:center;font-size:56px}
+.item .badge{display:inline-block;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;padding:4px 10px;border-radius:999px;margin-bottom:10px;background:var(--green-light);color:var(--green)}
+.item .badge.pro{background:var(--clay-light);color:var(--clay-dark)}
+.item p{color:var(--muted);margin-top:8px}
+
+/* preços */
+.pricing{background:var(--soft)}
+.plans{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:40px;align-items:stretch}
+.plan{background:var(--surface);border:2px solid var(--line);border-radius:26px;padding:32px;display:flex;flex-direction:column;position:relative}
+.plan.best{border-color:var(--clay);box-shadow:var(--sh)}
+.plan .ribbon{position:absolute;top:-15px;left:50%;transform:translateX(-50%);background:var(--clay);color:#fff;font-weight:900;font-size:13px;letter-spacing:.08em;text-transform:uppercase;padding:6px 16px;border-radius:999px;white-space:nowrap}
+.plan h3{font-size:24px}
+.plan .desc{color:var(--muted);margin:6px 0 18px}
+.price .old{color:var(--quiet);text-decoration:line-through;font-weight:700}
+.price .now{font-size:56px;font-weight:900;color:var(--green);line-height:1.05}
+.price .now sup{font-size:22px;vertical-align:top;margin-right:4px;position:relative;top:10px}
+.price .terms{font-size:14px;color:var(--quiet);margin-top:4px}
+.plan ul{list-style:none;margin:24px 0;display:grid;gap:14px;flex:1}
+.plan li{display:grid;grid-template-columns:22px 1fr;gap:10px}
+.plan li::before{content:"";width:22px;height:22px;border-radius:50%;margin-top:2px;background:var(--green) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M5.5 10.5l3 3 6-7' fill='none' stroke='white' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/16px no-repeat}
+.plan li b{display:block}
+.plan li span{font-size:15px;color:var(--quiet)}
+.trust{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 28px;margin-top:28px;font-weight:700;color:var(--muted);font-size:15px}
+
+/* garantia */
+.guarantee{display:grid;grid-template-columns:auto 1fr;gap:36px;align-items:center}
+.seal{width:170px;height:170px;border-radius:50%;background:var(--green);color:#fff;display:grid;place-items:center;text-align:center;box-shadow:var(--sh);outline:6px dashed var(--green-light);outline-offset:-18px}
+.seal b{font-size:64px;line-height:1;display:block;font-weight:900}
+.seal span{font-size:14px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+
+/* faq */
+.faq{display:grid;gap:12px;margin-top:32px}
+.faq details{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:0 22px}
+.faq summary{list-style:none;cursor:pointer;font-weight:800;padding:20px 30px 20px 0;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:0;top:50%;transform:translateY(-50%);font-size:26px;color:var(--clay);font-weight:700}
+.faq details[open] summary::after{content:"–"}
+.faq details p{padding-bottom:20px;color:var(--muted)}
+
+/* cta final */
+.final{background:var(--green);color:#fff;text-align:center}
+.final h2{color:#fff}
+.final p{color:#d9e7e0;margin-bottom:28px}
+.final .microcopy{color:#cfe0d8}
+
+footer{padding:40px 0;font-size:14px;color:var(--quiet);text-align:center}
+footer p+p{margin-top:10px}
+
+/* barra fixa mobile */
+.sticky{position:fixed;left:0;right:0;bottom:0;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:rgba(251,247,241,.95);backdrop-filter:blur(8px);border-top:1px solid var(--line);display:none;z-index:40;transform:translateY(110%);transition:transform .25s}
+.sticky.show{transform:none}
+
+/* modal upsell */
+.modal{position:fixed;inset:0;background:rgba(20,30,26,.6);display:none;align-items:center;justify-content:center;padding:16px;z-index:50}
+.modal.open{display:flex}
+.modal .box{background:var(--surface);border-radius:24px;max-width:460px;width:100%;padding:30px 26px;max-height:92vh;overflow:auto;position:relative}
+.modal .close{position:absolute;top:12px;right:14px;background:none;border:0;font-size:26px;cursor:pointer;color:var(--quiet)}
+.modal h3{font-size:24px;margin:6px 0 8px}
+.modal ul{list-style:none;margin:18px 0;display:grid;gap:10px}
+.modal li{padding-left:28px;position:relative;font-weight:700}
+.modal li span{display:block;font-weight:400;font-size:14px;color:var(--quiet)}
+.modal li::before{content:"✓";position:absolute;left:0;top:0;color:var(--green);font-weight:900}
+.modal .price{text-align:center;margin:12px 0 18px}
+.modal .skip{display:block;width:100%;margin-top:12px;background:none;border:0;color:var(--quiet);text-decoration:underline;font:inherit;font-size:15px;cursor:pointer}
+
+@media (max-width:860px){
+  section{padding:56px 0}
+  .hero .grid,.fit,.plans,.guarantee{grid-template-columns:1fr}
+  .facts,.items{grid-template-columns:1fr}
+  .hero-art{order:-1;padding:20px}
+  .hero-art .tag{left:12px;bottom:-14px}
+  .guarantee{text-align:center;justify-items:center}
+  .sticky{display:block}
+  footer{padding-bottom:110px}
+}
+@media (min-width:600px) and (max-width:860px){.items{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+
+<div class="topbar" aria-hidden="true"><div class="track" id="track">
+  <span>OFERTA DE LANÇAMENTO · <s>R$97</s> <b>R$10</b> · acesso imediato · garantia de 7 dias</span>
+  <span>OFERTA DE LANÇAMENTO · <s>R$97</s> <b>R$10</b> · acesso imediato · garantia de 7 dias</span>
+  <span>OFERTA DE LANÇAMENTO · <s>R$97</s> <b>R$10</b> · acesso imediato · garantia de 7 dias</span>
+  <span>OFERTA DE LANÇAMENTO · <s>R$97</s> <b>R$10</b> · acesso imediato · garantia de 7 dias</span>
+</div></div>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="wrap grid">
+    <div>
+      <div class="pill"><i></i>Para bebês de 0 a 6 meses</div>
+      <h1>15 minutos de toque por dia pra <em>barriguinha do seu bebê</em> voltar a funcionar.</h1>
+      <p class="lead">O <strong>Protocolo Zero Cólica</strong> é um guia ilustrado com 9 movimentos de massagem que ajudam o bebê a <mark>soltar os gases</mark>, <mark>fazer cocô</mark> e relaxar pra dormir. Sem curso longo, sem cortar leite, sem ficar só esperando “passar com 3 meses”.</p>
+      <a class="btn" href="#oferta">Quero aliviar a barriguinha dele →</a>
+      <p class="microcopy">Pagamento único · acesso no e-mail em segundos · 7 dias de garantia</p>
+      <ul class="checks">
+        <li>Passo a passo desenhado: onde pôr a mão, quanta pressão, quanto tempo</li>
+        <li>Abre no celular e dá pra seguir com uma mão só</li>
+        <li>Seguro pra recém-nascido, com orientações de quando parar</li>
+      </ul>
+    </div>
+    <div class="hero-art">
+      <svg viewBox="0 0 400 320" role="img" aria-label="Ilustração de mãos fazendo massagem circular na barriga de um bebê">
+        <rect width="400" height="320" rx="20" fill="#eef3ee"/>
+        <circle cx="330" cy="60" r="26" fill="#fbe7de"/>
+        <path d="M322 48a18 18 0 1 0 18 26a14 14 0 1 1-18-26z" fill="#e2a33f"/>
+        <ellipse cx="200" cy="268" rx="150" ry="18" fill="#dfeae4"/>
+        <!-- bebê -->
+        <circle cx="96" cy="180" r="44" fill="#f4cdb5"/>
+        <path d="M60 165c8-30 60-36 74-6" fill="#8b6a52"/>
+        <path d="M80 186q6 5 12 0M104 186q6 5 12 0" stroke="#5a463a" stroke-width="3" fill="none" stroke-linecap="round"/>
+        <path d="M92 202q6 4 12 0" stroke="#c9826a" stroke-width="3" fill="none" stroke-linecap="round"/>
+        <ellipse cx="210" cy="200" rx="86" ry="56" fill="#ffffff"/>
+        <ellipse cx="210" cy="200" rx="86" ry="56" fill="none" stroke="#e3e6df" stroke-width="2"/>
+        <ellipse cx="214" cy="196" rx="40" ry="28" fill="#f4cdb5"/>
+        <path d="M290 186q46-8 64 10M290 214q46 8 60 34" stroke="#f4cdb5" stroke-width="22" stroke-linecap="round" fill="none"/>
+        <!-- seta circular -->
+        <path d="M184 196a30 22 0 1 1 30 22" stroke="#d9714e" stroke-width="4" fill="none" stroke-dasharray="6 7" stroke-linecap="round"/>
+        <path d="M214 218l-12 4 8 8" stroke="#d9714e" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <!-- mão -->
+        <path d="M236 120c10-4 22 2 24 14l6 42c1 10-8 18-18 16l-26-6c-10-2-14-14-8-22l10-14z" fill="#e8b597"/>
+        <path d="M226 128l-12-30M238 122l-6-34M250 122l2-32M260 130l10-26" stroke="#e8b597" stroke-width="11" stroke-linecap="round"/>
+      </svg>
+      <div class="tag">9 movimentos ilustrados</div>
+    </div>
+  </div>
+</header>
+
+<!-- PRA QUEM É -->
+<section>
+  <div class="wrap">
+    <div class="center narrow wrap" style="padding:0">
+      <span class="eyebrow">feito pra mãe que não dorme</span>
+      <h2>Esse guia é pra você que quer <mark>parar de adivinhar</mark></h2>
+      <p class="lead">Chega de testar palpite de grupo de WhatsApp, gastar na farmácia e contar os dias pros 3 meses.</p>
+    </div>
+    <div class="fit">
+      <div class="card yes">
+        <h3><span class="ico">✓</span>É pra você se…</h3>
+        <ul>
+          <li>Seu bebê se contorce, fica vermelho e faz força pra conseguir fazer cocô</li>
+          <li>A barriga vive durinha e estufada, e os gases saem com choro</li>
+          <li>Você já tentou gotinhas, simeticona e probiótico sem ver muita diferença</li>
+          <li>Ouviu que “é normal, vai passar” e quer fazer alguma coisa enquanto isso</li>
+        </ul>
+      </div>
+      <div class="card no">
+        <h3><span class="ico">×</span>Não é pra você se…</h3>
+        <ul>
+          <li>Procura um remédio ou uma solução mágica de farmácia</li>
+          <li>Não consegue separar 15 minutos do dia pro bebê</li>
+          <li>Seu bebê tem febre, vômitos, sangue nas fezes ou não ganha peso — aí o caminho é o pediatra</li>
+          <li>Seu bebê já tem mais de 6 meses</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DOR -->
+<section class="pain">
+  <div class="wrap narrow">
+    <span class="eyebrow">3 da manhã, de novo</span>
+    <h2>Você conhece essa cena de cor.</h2>
+    <p>Ele dobra as perninhas, aperta o rostinho, chora de um jeito diferente. Você coloca no ombro, dá tapinha, anda pelo corredor, tenta mais uma mamada. Nada.</p>
+    <p>No dia seguinte alguém fala que “bebê é assim mesmo”. Só que quem passa a madrugada em claro com ele no colo é você.</p>
+    <p class="quote">E lá no fundo aparece a dúvida: “Será que eu tô fazendo alguma coisa errada?”</p>
+    <p>Não está. Cólica e gases são extremamente comuns nos primeiros meses — e o choro dele não diz nada sobre o tipo de mãe que você é.</p>
+    <p>O <strong>Protocolo Zero Cólica</strong> existe pra te dar um ponto de partida: um roteiro ilustrado, movimento por movimento, pra você saber exatamente o que fazer com as suas mãos na próxima crise.</p>
+    <a class="btn" href="#como-funciona" style="margin-top:12px">Ver como funciona →</a>
+  </div>
+</section>
+
+<!-- EVIDÊNCIAS -->
+<section>
+  <div class="wrap">
+    <div class="center narrow wrap" style="padding:0">
+      <span class="eyebrow">o que se sabe hoje</span>
+      <h2>Por que começar pelo toque</h2>
+    </div>
+    <div class="facts">
+      <div class="card fact">
+        <div class="num">1 em 5</div>
+        <p>bebês tem episódios de choro intenso e difícil de acalmar nos primeiros meses. Você não está sozinha nisso.</p>
+        <small>Estimativa amplamente citada na literatura pediátrica</small>
+      </div>
+      <div class="card fact">
+        <div class="num">≈ placebo</div>
+        <p>Em revisões científicas, a simeticona não mostrou benefício claro sobre o placebo pra cólica do lactente.</p>
+        <small>Revisão Cochrane sobre analgésicos na cólica infantil, 2016</small>
+      </div>
+      <div class="card fact">
+        <div class="num">Toque</div>
+        <p>Massagem e contato pele a pele são medidas de conforto simples, sem custo e que fortalecem o vínculo entre você e o bebê.</p>
+        <small>Prática recomendada como medida de conforto, sem substituir o pediatra</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section id="como-funciona" style="background:var(--surface)">
+  <div class="wrap narrow">
+    <div class="center">
+      <span class="eyebrow">do celular pras suas mãos</span>
+      <h2>Onde pôr a mão. Qual movimento. Quando parar.</h2>
+      <p class="lead">Você abre o guia, olha o desenho e faz. Não precisa decorar nada nem assistir horas de aula antes de começar.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="n">1</div>
+        <div>
+          <span class="k">antes de começar</span>
+          <h3>Escolha um momento tranquilo</h3>
+          <p>O guia mostra como aquecer as mãos, preparar o ambiente e respeitar o intervalo depois da mamada. A sequência não é pra ser feita no pico do choro.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="n">2</div>
+        <div>
+          <span class="k">com o guia aberto</span>
+          <h3>Siga os 9 movimentos, um de cada vez</h3>
+          <p>Cada movimento tem desenho da posição das mãos, direção, pressão e tempo — do primeiro contato até o exercício das perninhas.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="n">3</div>
+        <div>
+          <span class="k">no dia a dia</span>
+          <h3>Deixe a ficha de 15 minutos à mão</h3>
+          <p>Uma página que resume toda a sequência. Salve no celular ou imprima e cole na porta do guarda-roupa. Os 15 minutos organizam a rotina — cada bebê responde no seu tempo.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- O QUE VEM -->
+<section>
+  <div class="wrap">
+    <div class="center narrow wrap" style="padding:0">
+      <span class="eyebrow">por dentro do protocolo</span>
+      <h2>Leia em 20 minutos e aplique <mark>hoje à noite</mark></h2>
+      <p class="lead">Material escrito e ilustrado, em PDF, pensado pra quem tem um bebê no colo e só uma mão livre.</p>
+    </div>
+    <div class="items">
+      <div class="card item">
+        <div class="cover" style="background:var(--green-light)">👐</div>
+        <span class="badge">nos dois planos</span>
+        <h3>Os 9 Movimentos Ilustrados</h3>
+        <p>A sequência completa, com nome, ponto exato, pressão e tempo de cada movimento.</p>
+      </div>
+      <div class="card item">
+        <div class="cover" style="background:var(--green-light)">📋</div>
+        <span class="badge">nos dois planos</span>
+        <h3>Ficha Rápida de 15 Minutos</h3>
+        <p>A ordem certa dos movimentos em uma página só, pra consultar sem reler o guia.</p>
+      </div>
+      <div class="card item">
+        <div class="cover" style="background:var(--clay-light)">🌙</div>
+        <span class="badge pro">no Premium</span>
+        <h3>Rotina do Soninho</h3>
+        <p>Uma sequência curta pra manter a barriguinha funcionando depois que a crise passa e preparar o bebê pra dormir.</p>
+      </div>
+      <div class="card item">
+        <div class="cover" style="background:var(--clay-light)">🚨</div>
+        <span class="badge pro">no Premium</span>
+        <h3>SOS Madrugada</h3>
+        <p>Pra quando ele não deixa nem encostar na barriga: posições e movimentos de alívio, do mais leve ao mais completo.</p>
+      </div>
+      <div class="card item">
+        <div class="cover" style="background:var(--clay-light)">🔎</div>
+        <span class="badge pro">no Premium</span>
+        <h3>Decifrando o Choro</h3>
+        <p>Gases, cólica ou disquesia? Aprenda a diferenciar os sinais e saiba quando é hora de ligar pro pediatra.</p>
+      </div>
+      <div class="card item">
+        <div class="cover" style="background:var(--clay-light)">🍼</div>
+        <span class="badge pro">no Premium</span>
+        <h3>Kit Mamada Tranquila</h3>
+        <p>3 guias extras: pega correta na amamentação, alimentação da mãe e introdução alimentar.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--
+  DEPOIMENTOS: adicione aqui somente depoimentos reais de clientes (com autorização).
+  Modelo de card:
+  <div class="card"><p>"Texto do depoimento"</p><b>Nome</b> · <span>mãe do Fulano, 2 meses</span></div>
+-->
+
+<!-- OFERTA -->
+<section class="pricing" id="oferta">
+  <div class="wrap">
+    <div class="center narrow wrap" style="padding:0">
+      <span class="eyebrow">escolha seu plano</span>
+      <h2>Dois jeitos de começar ainda hoje</h2>
+      <p class="lead">Pagamento único, sem mensalidade. O acesso chega no seu e-mail em segundos.</p>
+    </div>
+    <div class="plans">
+      <div class="plan">
+        <h3>Essencial</h3>
+        <p class="desc">O guia completo pra você aplicar hoje à noite.</p>
+        <div class="price">
+          <div class="old">De R$97</div>
+          <div class="now"><sup>R$</sup>10</div>
+          <div class="terms">pagamento único · acesso por 1 ano</div>
+        </div>
+        <ul>
+          <li><div><b>Os 9 Movimentos Ilustrados</b><span>a sequência completa, na ordem certa</span></div></li>
+          <li><div><b>Ficha Rápida de 15 Minutos</b><span>pra imprimir ou salvar no celular</span></div></li>
+          <li><div><b>Acesso por 1 ano</b><span>no celular, sem mensalidade</span></div></li>
+          <li><div><b>Garantia de 7 dias</b><span>não gostou, devolvemos seu dinheiro</span></div></li>
+        </ul>
+        <button class="btn alt full" data-plan="essencial">Quero o Essencial por R$10</button>
+      </div>
+      <div class="plan best">
+        <div class="ribbon">mais escolhido</div>
+        <h3>Premium</h3>
+        <p class="desc">Tudo pra atravessar os primeiros 6 meses com mais calma.</p>
+        <div class="price">
+          <div class="old">De R$197</div>
+          <div class="now"><sup>R$</sup>39,90</div>
+          <div class="terms">pagamento único · acesso vitalício</div>
+        </div>
+        <ul>
+          <li><div><b>Tudo do Essencial</b><span>os 9 movimentos e a ficha de 15 minutos</span></div></li>
+          <li><div><b>Rotina do Soninho</b><span>pra manter o intestino regulado e dormir melhor</span></div></li>
+          <li><div><b>SOS Madrugada</b><span>alívio passo a passo na hora da crise</span></div></li>
+          <li><div><b>Decifrando o Choro</b><span>gases, cólica ou disquesia: como diferenciar</span></div></li>
+          <li><div><b>Kit Mamada Tranquila</b><span>3 guias bônus de amamentação e alimentação</span></div></li>
+          <li><div><b>Acesso vitalício</b><span>serve até pro próximo filho</span></div></li>
+          <li><div><b>Garantia de 7 dias</b><span>não gostou, devolvemos seu dinheiro</span></div></li>
+        </ul>
+        <button class="btn full" data-plan="premium">Quero o Premium por R$39,90</button>
+      </div>
+    </div>
+    <div class="trust"><span>🔒 Pagamento 100% seguro</span><span>⚡ Acesso em segundos</span><span>💳 Pix ou cartão</span></div>
+  </div>
+</section>
+
+<!-- GARANTIA -->
+<section>
+  <div class="wrap narrow guarantee">
+    <div class="seal"><div><b>7</b><span>dias de<br>garantia</span></div></div>
+    <div>
+      <span class="eyebrow">risco zero pra você</span>
+      <h2>Teste por 7 dias. Se não gostar, o dinheiro volta.</h2>
+      <p class="lead">Aplique o protocolo durante uma semana. Se achar que não é pra você, é só mandar uma mensagem pro suporte e devolvemos 100% do valor, sem burocracia.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section style="background:var(--surface)">
+  <div class="wrap narrow">
+    <div class="center">
+      <span class="eyebrow">dúvidas frequentes</span>
+      <h2>O que as mães perguntam antes de começar</h2>
+    </div>
+    <div class="faq">
+      <details><summary>Serve pra qualquer idade?</summary><p>O protocolo foi pensado pra bebês do nascimento até cerca de 6 meses, que é a fase em que gases, cólica e intestino preso são mais comuns.</p></details>
+      <details><summary>Nunca fiz massagem em bebê. Posso machucar?</summary><p>A pressão usada é bem leve, e cada movimento tem desenho mostrando o ponto, a força e o tempo. O guia também explica os sinais pra parar e quando procurar o pediatra.</p></details>
+      <details><summary>Qual a diferença entre Essencial e Premium?</summary><p>Os dois têm o guia completo com os 9 movimentos e a ficha de 15 minutos. O Premium inclui ainda a Rotina do Soninho, o SOS Madrugada, o Decifrando o Choro, o Kit Mamada Tranquila e acesso vitalício. No Essencial, o acesso é de 1 ano.</p></details>
+      <details><summary>É curso em vídeo?</summary><p>Não. É um guia escrito e ilustrado, em PDF, pra abrir no celular ou imprimir. Foi feito assim de propósito: mãe de recém-nascido não tem tempo pra maratonar aula.</p></details>
+      <details><summary>Em quanto tempo vejo resultado?</summary><p>Cada bebê é único. Muitas mães percebem a barriguinha mais solta já nas primeiras aplicações, e a constância ao longo dos dias é o que faz diferença.</p></details>
+      <details><summary>Preciso de algum material ou óleo?</summary><p>Um óleo vegetal ajuda os movimentos a deslizarem. O guia indica opções simples e baratas, que provavelmente você já tem em casa.</p></details>
+      <details><summary>Posso fazer se meu bebê já toma remédio pra gases?</summary><p>Pode. O protocolo não substitui nenhuma medicação ou orientação do pediatra — ele é um cuidado a mais, feito com as suas mãos.</p></details>
+      <details><summary>E se não funcionar pro meu bebê?</summary><p>Você tem 7 dias de garantia incondicional. Manda uma mensagem pro suporte e devolvemos o valor integral.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="final">
+  <div class="wrap narrow">
+    <span class="eyebrow" style="color:var(--gold)">a próxima noite pode ser diferente</span>
+    <h2>Ele não precisa passar por mais uma madrugada assim</h2>
+    <p>Você chegou até aqui porque quer ajudar seu bebê de verdade. O acesso é imediato e você tem 7 dias pra testar sem risco.</p>
+    <a class="btn" href="#oferta">Quero começar hoje →</a>
+    <p class="microcopy">Acesso imediato · 7 dias de garantia · Pix ou cartão</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap narrow">
+    <p><strong>Protocolo Zero Cólica</strong> · Este conteúdo tem caráter educativo e não substitui acompanhamento médico ou pediátrico. Os resultados variam de bebê para bebê. Se o seu bebê tiver febre, vômitos, sangue nas fezes, recusa alimentar ou baixo ganho de peso, procure o pediatra.</p>
+    <p>© <span id="year"></span> Protocolo Zero Cólica · Todos os direitos reservados</p>
+  </div>
+</footer>
+
+<div class="sticky" id="sticky"><a class="btn full" href="#oferta">Quero aliviar a barriguinha dele →</a></div>
+
+<!-- MODAL UPSELL (aparece ao escolher o Essencial) -->
+<div class="modal" id="upsell" role="dialog" aria-modal="true" aria-labelledby="upsell-title">
+  <div class="box">
+    <button class="close" aria-label="Fechar" data-close>×</button>
+    <span class="eyebrow">oferta liberada</span>
+    <h3 id="upsell-title">Leve o Premium completo pela metade do preço</h3>
+    <p style="color:var(--muted)">Só nesta tela, pra quem acabou de escolher o Essencial.</p>
+    <ul>
+      <li>Rotina do Soninho<span>intestino regulado e sono melhor</span></li>
+      <li>SOS Madrugada<span>alívio passo a passo na hora da crise</span></li>
+      <li>Decifrando o Choro<span>gases, cólica ou disquesia</span></li>
+      <li>Kit Mamada Tranquila<span>3 guias bônus de alimentação</span></li>
+      <li>Acesso vitalício<span>no Essencial é 1 ano</span></li>
+    </ul>
+    <div class="price">
+      <div class="old">De R$39,90</div>
+      <div class="now"><sup>R$</sup>19,90</div>
+      <div class="terms">só R$9,90 a mais que o Essencial</div>
+    </div>
+    <a class="btn full" data-checkout="upsell" href="#">Sim, quero o Premium por R$19,90</a>
+    <button class="skip" data-checkout="essencial">Não, prefiro só o Essencial por R$10 →</button>
+  </div>
+</div>
+
+<script>
+/* ====== CONFIGURE AQUI OS LINKS DE CHECKOUT (Ticto, Kiwify, Hotmart, etc.) ====== */
+var CHECKOUT = {
+  essencial: "#",  // link do plano Essencial (R$10)
+  premium:   "#",  // link do plano Premium (R$39,90)
+  upsell:    "#"   // link do Premium com desconto (R$19,90)
+};
+/* ================================================================================ */
+
+(function(){
+  function go(key){
+    var url = CHECKOUT[key];
+    if(!url || url === "#"){ alert("Link de checkout ainda não configurado."); return; }
+    var qs = location.search.slice(1);
+    if(qs) url += (url.indexOf("?") > -1 ? "&" : "?") + qs; // repassa UTMs
+    location.href = url;
+  }
+  var modal = document.getElementById("upsell");
+  document.querySelectorAll("[data-plan]").forEach(function(b){
+    b.addEventListener("click", function(){
+      if(b.dataset.plan === "essencial") modal.classList.add("open");
+      else go("premium");
+    });
+  });
+  document.querySelectorAll("[data-checkout]").forEach(function(b){
+    b.addEventListener("click", function(e){ e.preventDefault(); go(b.dataset.checkout); });
+  });
+  modal.addEventListener("click", function(e){
+    if(e.target === modal || e.target.hasAttribute("data-close")) modal.classList.remove("open");
+  });
+  document.addEventListener("keydown", function(e){ if(e.key === "Escape") modal.classList.remove("open"); });
+
+  var sticky = document.getElementById("sticky");
+  var offer = document.getElementById("oferta");
+  function onScroll(){
+    var r = offer.getBoundingClientRect();
+    var inOffer = r.top < innerHeight && r.bottom > 0;
+    sticky.classList.toggle("show", scrollY > 600 && !inOffer);
+  }
+  addEventListener("scroll", onScroll, {passive:true});
+  document.getElementById("year").textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
