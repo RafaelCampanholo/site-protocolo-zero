@@ -496,7 +496,7 @@ footer a{color:inherit}
           <li class="off"><svg class="ci" aria-hidden="true"><use href="#i-no"/></svg><span><s>Bônus 02:</s> <i><s>Prato da Mãe Sem Cólica</s></i></span></li>
           <li class="off"><svg class="ci" aria-hidden="true"><use href="#i-no"/></svg><span><s>Bônus 03:</s> <i><s>Protocolo S.O.S. 3 da Manhã</s></i></span></li>
         </ul>
-        <a class="cta" data-checkout="basico" href="https://pay.cakto.com.br/94k3az6_1202322">QUERO O BÁSICO</a>
+        <a class="cta" data-checkout="oferta" href="oferta.html">QUERO O BÁSICO</a>
       </article>
 
       <article class="plan plan--best">
@@ -624,8 +624,8 @@ footer a{color:inherit}
 <script>
 /* ====== LINKS DE CHECKOUT (Cakto) ====== */
 var CHECKOUT = {
-  basico:   "https://pay.cakto.com.br/94k3az6_1202322", // R$10
-  completo: "https://pay.cakto.com.br/3454g7a"          // R$19,90
+  oferta:   "oferta.html",                      // Básico R$10 → abre a oferta especial (upgrade R$13,27)
+  completo: "https://pay.cakto.com.br/3454g7a"  // R$19,90
 };
 /* ======================================= */
 
@@ -636,7 +636,7 @@ var CHECKOUT = {
     var url = CHECKOUT[a.dataset.checkout];
     if (!url) return;
     try {
-      var u = new URL(url);
+      var u = new URL(url, location.href);
       params.forEach(function (v, k) { if (!u.searchParams.has(k)) u.searchParams.set(k, v); });
       a.href = u.toString();
     } catch (e) { a.href = url; }
