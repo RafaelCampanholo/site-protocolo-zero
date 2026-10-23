@@ -79,8 +79,8 @@ s{text-decoration-thickness:2px}
 .stars svg{width:20px;height:20px;fill:currentColor}
 
 /* ===== TOPO ===== */
-.hero{background:var(--bg-pink) url(img/fundo-topo.webp) center top/cover no-repeat;padding:20px 0 44px}
-.byline{display:flex;width:fit-content;max-width:100%;align-items:center;gap:10px;margin:0 auto 16px;padding:5px 14px 5px 5px;background:rgba(255,255,255,.78);border-radius:30px;text-align:left;font:600 .8rem/1.35 var(--f-label);color:var(--navy);box-shadow:0 4px 14px -8px rgba(19,38,58,.35)}
+.hero{background:var(--bg-pink) url(img/fundo-topo.webp) center top/cover no-repeat;padding:28px 0 44px}
+.byline{display:flex;width:fit-content;max-width:100%;align-items:center;gap:10px;margin:18px auto 0;padding:5px 14px 5px 5px;background:rgba(255,255,255,.78);border-radius:30px;text-align:left;font:600 .8rem/1.35 var(--f-label);color:var(--navy);box-shadow:0 4px 14px -8px rgba(19,38,58,.35)}
 .byline img{flex:none;width:36px;height:36px;border-radius:50%}
 .byline strong{font-weight:800;color:var(--pink-deep)}
 .hero h1{font:800 clamp(1.55rem,6.8vw,3.05rem)/1.14 var(--f-display);color:var(--navy);text-transform:uppercase;text-align:center;letter-spacing:-.01em;text-wrap:balance}
@@ -285,10 +285,6 @@ var o=new IntersectionObserver(function(es){if(es[0].isIntersecting){fbq('track'
 <!-- ===================== TOPO ===================== -->
 <header class="hero">
   <div class="wrap">
-    <p class="byline">
-      <img src="img/dra-carla-avatar-160.webp" width="36" height="36" alt="Dra. Carla Abreu">
-      <span>Método da <strong>Dra. Carla Abreu</strong>, fisioterapeuta pediátrica com <strong>+3.000 bebês atendidos</strong></span>
-    </p>
     <h1>17 Massagens para seu bebê <mark>soltar os gases, fazer cocô</mark> e parar de chorar de cólica <mark>em até 3 dias</mark></h1>
     <p class="lead">Chega de noites em claro: com suas mãos, seu bebê fica calminho e dorme tranquilo. <strong>Sem remédio.</strong></p>
 
@@ -304,7 +300,10 @@ var o=new IntersectionObserver(function(es){if(es[0].isIntersecting){fbq('track'
       <p class="price__risk">Risco zero!</p>
     </div>
     <a class="cta cta--hero" href="#bonus">QUERO ALIVIAR A CÓLICA DO MEU BEBÊ</a>
-    <p class="cta-note">Acesso imediato no seu e-mail · 30 dias de garantia</p>
+    <p class="byline">
+      <img src="img/dra-carla-avatar-160.webp" width="36" height="36" alt="Dra. Carla Abreu">
+      <span>Método da <strong>Dra. Carla Abreu</strong>, fisioterapeuta pediátrica com <strong>+3.000 bebês atendidos</strong></span>
+    </p>
   </div>
 </header>
 
@@ -340,6 +339,7 @@ var o=new IntersectionObserver(function(es){if(es[0].isIntersecting){fbq('track'
         <svg class="yt__play" viewBox="0 0 68 48" aria-hidden="true"><use href="#i-yt"/></svg>
       </button></div>
     </div>
+    <a class="cta" href="#bonus">QUERO ADQUIRIR AGORA</a>
   </div>
 </section>
 
@@ -399,6 +399,7 @@ var o=new IntersectionObserver(function(es){if(es[0].isIntersecting){fbq('track'
         <li><svg class="ci" aria-hidden="true"><use href="#i-ok"/></svg><span>Dorme mais tranquilo</span></li>
       </ul>
     </div>
+    <a class="cta" href="#bonus">QUERO ADQUIRIR AGORA</a>
   </div>
 </section>
 
@@ -435,6 +436,7 @@ var o=new IntersectionObserver(function(es){if(es[0].isIntersecting){fbq('track'
         <p>Repita a sequência no dia a dia e acompanhe a melhora do seu bebê.</p>
       </li>
     </ol>
+    <a class="cta" href="#bonus">QUERO ADQUIRIR AGORA</a>
   </div>
 </section>
 
